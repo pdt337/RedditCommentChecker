@@ -3,8 +3,8 @@ import time
 
 def nameChecker():
 	USER_AGENT="User name catcher by /u/badpokerface12 for /u/PM_ME_YOUR_TITS"  #describes what the bot does 
-	USER_NAME='badpokerface12' # your username for logging in and checking 
-	PASS_WD='phideltatheta12' # put your password here
+	USER_NAME='' # your username for logging in and checking 
+	PASS_WD='' # put your password here
 	
 	reddit=praw.Reddit(USER_AGENT) #Creats bot
 	reddit.login(USER_NAME,PASS_WD)
