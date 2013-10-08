@@ -13,8 +13,8 @@ def nameChecker():
 	checked=set()
 	while True:
 		print "Getting Comments"
-		all_comments=reddit.get_comments('test',limit=2000)
-		#flatten=praw.helpers.flatten_tree(all_comments)
+		all_comments=reddit.get_comments(limit=2000)
+		flatten=praw.helpers.flatten_tree(all_comments)
 		for comments in all_comments:
 			print comments.id
 			if (comments.body==USER_NAME or comments.body=='/u/PM_ME_YOUR_TITS_GIRL') and comments.id not in checked:
